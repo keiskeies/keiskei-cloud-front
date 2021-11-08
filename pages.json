@@ -1,0 +1,64 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	// "condition": { //模式配置，仅开发期间生效
+	// 	"current": 0, //当前激活的模式(list 的索引项)
+	// 	"list": [{
+	// 		"name": "test", //模式名称
+	// 		"path": "pages/componentsC/test/index", //启动页面，必选
+	// 		"query": "uuid=c4bba940-f69e-11ea-a419-6bafda9d095e&__id__=1" //启动参数，在页面的onLoad函数里面得到
+	// 	}]
+	// },
+	"pages": [
+		// 演示-组件
+		{
+			"path": "pages/cloud/video/index",
+			"style": {
+				"navigationBarTitleText": "视频"
+			}
+		}, {
+			"path": "pages/cloud/image/index",
+			"style": {
+				"navigationBarTitleText": "图片"
+			}
+		}, {
+			"path": "pages/cloud/upload/index",
+			"style": {
+				"navigationBarTitleText": "上传"
+			}
+		}
+	],
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#000000",
+		"backgroundColor": "#000000"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#303133",
+		"backgroundColor": "#000000",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/cloud/video/index",
+				"iconPath": "static/uview/example/component.png",
+				"selectedIconPath": "static/uview/example/component_select.png",
+				"text": "视频"
+			},
+			{
+				"pagePath": "pages/cloud/upload/index",
+				"iconPath": "static/uview/example/js.png",
+				"selectedIconPath": "static/uview/example/js_select.png",
+				"text": "上传"
+			},
+			{
+				"pagePath": "pages/cloud/image/index",
+				"iconPath": "static/uview/example/template.png",
+				"selectedIconPath": "static/uview/example/template_select.png",
+				"text": "图片"
+			}
+		]
+	}
+}
